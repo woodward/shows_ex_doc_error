@@ -36,7 +36,14 @@ defmodule ShowsExDocError.MixProject do
       # {:ex_doc, "~> 0.29", only: :dev, runtime: false}
       #
       # My fork of ex_doc fixes the problem:
-      {:ex_doc, github: "woodward/ex_doc", only: :dev, runtime: false}
+      # {:ex_doc, github: "woodward/ex_doc", only: :dev, runtime: false}
+      #
+      # which is now merged into ExDoc via this commit:
+      {:ex_doc,
+       github: "elixir-lang/ex_doc",
+       commit: "2c581239e0989fdc91e3c83b4ce28ef4fe0adda6",
+       only: :dev,
+       runtime: false}
     ]
   end
 
